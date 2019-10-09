@@ -1,0 +1,13 @@
+export const AUTH_LOADING = "AUTH_LOADING";
+export const AUTH_END_LOADING = "AUTH_END_LOADING";
+export const AUTH_SET_DATA = "AUTH_SET_DATA";
+export const AUTH_RESET_DATA = "AUTH_RESET_DATA";
+
+export const ARTICLE_LOADING = "ARTICLE_LOADING";
+export const ARTICLE_END_LOADING = "ARTICLE_END_LOADING";
+export const GET_ARTICLES = "GET_ARTICLES";
+export const GET_ARTICLE = "GET_ARTICLE";
+export const ARTICLE_RESET_DATA = "ARTICLE_RESET_DATA";
+
+export const GET_ERRORS = "GET_ERRORS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";

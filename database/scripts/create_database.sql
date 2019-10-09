@@ -12,12 +12,6 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema db_logixla_crud
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `db_logixla_crud` ;
-USE `db_logixla_crud` ;
-
--- -----------------------------------------------------
 -- Table `db_logixla_crud`.`tb_usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `tb_usuario` (
@@ -54,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `tb_articulo` (
   INDEX `fk_articulo_usuario_creador_idx` (`id_usuario_creador` ASC),
   CONSTRAINT `fk_articulo_usuario_creador`
     FOREIGN KEY (`id_usuario_creador`)
-    REFERENCES `db_logixla_crud`.`tb_usuario` (`id`)
+    REFERENCES `tb_usuario` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 

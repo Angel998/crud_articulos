@@ -13,7 +13,7 @@ begin
     );
     
     if (@response is null) then
-		set @response = 1;
+		set @response = 0;
 	end if;
     
     set @response = @response + 1;

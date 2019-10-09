@@ -59,7 +59,8 @@ begin
 		set @sql_query = concat(@sql_query, " and (
 			a.nombre like @search or 
             a.codigo_barra like @search or
-            a.marca like @search 
+            a.marca like @search or 
+            a.precio like @search
         )");
     end if;
     

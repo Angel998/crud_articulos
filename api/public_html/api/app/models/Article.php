@@ -46,8 +46,7 @@ class Article
 
     public function update_article($article)
     {
-        $this->db->query('call proc_add_articulo(:p_id,:p_nombre,:p_codigo_barra,:p_precio,:p_marca,:p_cantidad)');
-
+        $this->db->query('call proc_update_articulo(:p_id,:p_nombre,:p_codigo_barra,:p_precio,:p_marca,:p_cantidad)');
         $this->db->bind(':p_id', $article->id);
         $this->db->bind(':p_nombre', $article->nombre);
         $this->db->bind(':p_codigo_barra', $article->codigo_barra);
